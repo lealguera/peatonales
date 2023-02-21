@@ -64,24 +64,8 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
-layerSwitcher.hidePanel = function() {};
-layerSwitcher.showPanel();
 
-
-    var searchLayer = new SearchLayer({
-      layer: lyr_CRUCESPEATONALFEB20rehecho_1,
-      colName: 'CÓDIGO',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-9930403.736339, 1539645.781051, -9930019.673860, 1539874.057784], map.getSize());
+map.getView().fit([-9941500.814115, 1529945.711679, -9916920.815471, 1547676.536215], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
